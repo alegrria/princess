@@ -1,0 +1,21 @@
+{
+  "name": "princess",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Responsive single-page apartment rental website",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs src",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs dist",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "check": "node --check src/app.js && node --check scripts/build.mjs && node --check scripts/serve.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "prettier": "^3.9.6"
+  }
+}
