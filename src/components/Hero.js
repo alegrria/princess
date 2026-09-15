@@ -1,0 +1,8 @@
+import { apartment } from "../data/apartment.js";
+import { gallery } from "../data/gallery.js";
+import { escape as e, template, money, picture } from "../lib/html.js";
+import { lines, badge, cta } from "./shared.js";
+export function Hero(t) {
+  const a = apartment;
+  return `<section class="hero" aria-labelledby="hero-title"><div class="hero-top"><p class="eyebrow">${t.hero.eyebrow}</p><button class="text-button share-button">${t.share} <span aria-hidden="true">↗</span></button></div><div class="hero-layout"><div class="hero-copy"><p class="location-line">${e(t.hero.subtitle)}</p><h1 id="hero-title">${lines(t.hero.title)}</h1><p class="hero-description">${t.hero.text}</p><div class="hero-facts"><span>${e(template(t.hero.size, { size: new Intl.NumberFormat(t.lang).format(a.size) }))}</span><span>${t.hero.furnished}</span><span>${t.hero.floor}</span></div><div class="hero-rate"><div><span class="label">${t.hero.monthly}</span><strong>${money(a.pricing.monthly, t.lang) || t.hero.rentUnknown}</strong></div><div><span class="label">${t.hero.stay}</span><strong>${template(t.hero.months, { n: a.rental.minimumMonths })}<sup>*</sup></strong></div></div>${badge(t)}<div class="hero-buttons">${cta(t)}<a href="#gallery" class="text-link">${t.view} ↓</a></div></div><figure class="hero-photo">${picture(gallery[0], { hero: true, alt: t.gallery.alts.concept })}<figcaption>${t.hero.imageNote}</figcaption><button data-photo="0" class="photo-count" aria-label="${e(template(t.gallery.open, { caption: t.gallery.captions.concept }))}"><span aria-hidden="true">▦</span> 01 / 03</button></figure></div><p class="preview-note">${t.hero.draft} <span>* ${template(t.pricing.note, {})}</span></p></section>`;
+}
