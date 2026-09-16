@@ -208,30 +208,30 @@ export default {
   },
   neighbourhood: {
     eyebrow: "06 / HAMBURG VOR DER TÜR",
-    title: "Neu in der Stadt.\nBald im Alltag zuhause.",
+    title: "Alles nah.\nHamburg noch näher.",
     intro:
-      "Ein praktischer Startpunkt für Horn und den Hamburger Osten. Entdecke Verbindungen, Besorgungen und Orte für eine Pause.",
+      "The Princess liegt ruhig genug zum Ankommen und gleichzeitig hervorragend angebunden. Die wichtigsten Wege für deinen Alltag beginnen direkt in der Nähe.",
     transport: {
-      title: "Unterwegs mit dem hvv",
-      text: "Von Horn führen U-Bahn- und Busverbindungen in Richtung Innenstadt. Plane den Weg zur Arbeit, zur Hochschule, zum Hauptbahnhof oder zum Flughafen direkt beim hvv.",
+      title: "5–7 Min. zu Fuß",
+      text: "Zur U2/U4 Horner Rennbahn. Von dort bringt dich die U2 in ungefähr 10 Minuten direkt zum Hauptbahnhof Nord.",
       link: "Verbindung planen",
     },
-    shopping: {
-      title: "Besorgungen im Stadtteil Horn",
-      text: "Geschäfte und Services im Stadtteilzentrum. Aktuelle Angebote und Öffnungszeiten direkt beim Center prüfen.",
-      link: "Center entdecken",
+    netto: {
+      title: "ca. wenige Minuten",
+      text: "Zum Netto Marken-Discount entlang der Kroogblöcke — praktisch für den schnellen Einkauf direkt in der Nähe.",
+      link: "Netto in der Umgebung",
     },
-    park: {
-      title: "Eine Pause im Grünen",
-      text: "Der Öjendorfer Park mit seinem See ist ein Ziel für freie Stunden im Hamburger Osten.",
-      link: "Park kennenlernen",
+    cluster: {
+      title: "ca. 5–7 Min. zu Fuß",
+      text: "Zum Einkaufszentrum an der Horner Rennbahn mit REWE, Budnikowski, Bäckerei, Apotheke, Gastronomie und weiteren Services.",
+      link: "Shopping-Cluster entdecken",
     },
-    essentials: {
-      title: "Die kleinen Wege des Alltags",
-      text: "Supermarkt, Apotheke, Bäckerei, Paketshop, Sport und Cafés: Entdecke Angebote in der Umgebung auf der Karte.",
-      link: "Umgebung erkunden",
+    hauptbahnhof: {
+      title: "ca. 10 Min. mit der U2",
+      text: "Von Horner Rennbahn direkt zum Hauptbahnhof Nord. Die genaue Gesamtzeit hängt vom Fußweg und dem gewählten Ausgang ab.",
+      link: "Verbindung planen",
     },
-    note: "Die nächste Haltestelle und genaue Wegezeiten ab dem Apartment werden noch geprüft. Verbindungen und Öffnungszeiten bitte aktuell nachsehen.",
+    note: "Die sichtbaren Zeiten sind ungefähre Angaben; genaue Wege variieren je nach Ausgang und Fußweg. Weitere Alltagsorte, Buslinien 261/561 und Grünflächen findest du auf der Karte. Verbindungen, Angebote und Öffnungszeiten bitte aktuell nachsehen.",
     mapTitle: "Hamburg-Horn / Kroogblöcke",
     mapText:
       "Die Karte zeigt die ungefähre Umgebung, nicht den Wohnungseingang.",

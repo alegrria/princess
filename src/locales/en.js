@@ -208,30 +208,30 @@ export default {
   },
   neighbourhood: {
     eyebrow: "06 / HAMBURG ON YOUR DOORSTEP",
-    title: "New to the city.\nSoon part of the everyday.",
+    title: "Everything close.\nHamburg even closer.",
     intro:
-      "A practical starting point for Horn and eastern Hamburg. Find connections, everyday essentials and somewhere to take a break.",
+      "The Princess is calm enough for arriving and exceptionally well connected. The everyday routes that matter begin close by.",
     transport: {
-      title: "Getting around with hvv",
-      text: "U-Bahn and bus connections from Horn make it easy to reach central Hamburg. Plan your journey to work, university, the main station or the airport directly with hvv.",
+      title: "5–7 min walk",
+      text: "To U2/U4 at Horner Rennbahn. From there, U2 reaches Hauptbahnhof Nord directly in about 10 minutes.",
       link: "Plan a journey",
     },
-    shopping: {
-      title: "Everyday errands in Horn",
-      text: "Shops and services in the district centre. Check current offerings and opening hours with the centre.",
-      link: "Explore the centre",
+    netto: {
+      title: "A few minutes away",
+      text: "To Netto Marken-Discount along Kroogblöcke — useful for a quick shop close to home.",
+      link: "Find Netto nearby",
     },
-    park: {
-      title: "A little time outdoors",
-      text: "Öjendorfer Park and its lake offer a destination for free time in eastern Hamburg.",
-      link: "Discover the park",
+    cluster: {
+      title: "ca. 5–7 min walk",
+      text: "To the Horner Rennbahn shopping centre, with REWE, Budnikowski, a bakery, pharmacy, food and drink, and other everyday services.",
+      link: "Explore the shopping cluster",
     },
-    essentials: {
-      title: "The little everyday journeys",
-      text: "Supermarket, pharmacy, bakery, parcel services, sport and cafés: explore local options on the map.",
-      link: "Explore the area",
+    hauptbahnhof: {
+      title: "ca. 10 min by U2",
+      text: "Direct from Horner Rennbahn to Hauptbahnhof Nord. The total journey depends on the walk and the station exit you use.",
+      link: "Plan a journey",
     },
-    note: "The nearest stop and precise travel times from the apartment are still being checked. Please confirm current services and opening hours.",
+    note: "The visible times are approximate; exact routes vary by exit and pedestrian path. The map keeps additional everyday places, bus routes 261/561 and green spaces available. Please confirm current services, offers and opening hours.",
     mapTitle: "Hamburg-Horn / Kroogblöcke",
     mapText: "The map shows the approximate area, not the apartment entrance.",
     consent:
