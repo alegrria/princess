@@ -46,9 +46,10 @@ const t = () => (state.lang === "en" ? en : de);
 const activePage = () =>
   ["impressum", "datenschutz"].includes(location.hash.slice(1))
     ? location.hash.slice(1)
-    : ["impressum", "datenschutz"].includes(location.pathname.split("/")[1]) &&
-        !location.hash
-      ? location.pathname.split("/")[1]
+    : ["impressum", "datenschutz"].includes(
+          location.pathname.split("/").filter(Boolean).at(-1),
+        ) && !location.hash
+      ? location.pathname.split("/").filter(Boolean).at(-1)
       : "home";
 function saveDraft() {
   const form = document.getElementById("inquiry-form");
