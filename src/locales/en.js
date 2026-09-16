@@ -22,7 +22,7 @@ export default {
   hero: {
     eyebrow: "A SMALL HOME. A NEW CHAPTER.",
     title: "Settle in.\nMake it yours.",
-    subtitle: "Furnished apartment in Hamburg-Billstedt",
+    subtitle: "Furnished apartment in Hamburg-Horn",
     text: "A thoughtfully prepared home for your time in Hamburg. Fully furnished, calmly designed and ready for everyday life.",
     monthly: "Monthly rent",
     stay: "Proposed minimum stay",
@@ -48,13 +48,13 @@ export default {
   overview: {
     eyebrow: "01 / YOUR TEMPORARY HOME",
     title: "A temporary home.\nNothing provisional\nabout it.",
-    text: "{nickname} is a carefully furnished apartment for people making Hamburg home for a few months — for a new job, a project, a research stay or a first settled base while relocating.",
+    text: "{nickname} is planned as a thoughtfully furnished apartment for people making Hamburg home for a few months — for a new job, a project, a research stay or a first settled base while relocating.",
     detail:
       "Around {size} m² arranged for an uncomplicated everyday life: a sleeping area, a proper workspace, a kitchen, storage and a living and dining area where you want to spend time after a long day.",
     facts: [
-      "Furnished",
-      "Workspace",
-      "Kitchen",
+      "Furnishings planned",
+      "Workspace planned",
+      "Kitchen planned",
       "Internet planned",
       "Utilities planned",
       "Ground floor",
@@ -62,7 +62,7 @@ export default {
     character:
       "The furnishings are considered as a whole. Warm materials, quiet colours, carefully chosen furniture and small details give the apartment its own character — understated and comfortable, without feeling like a hotel.",
     arrival:
-      "Arrive, unpack, settle in. Furniture and a workspace are provided; internet is planned as part of the monthly rent.",
+      "Arrive, unpack, settle in. Furniture and a workspace are part of the proposed living concept; internet is planned as part of the monthly rent.",
   },
   gallery: {
     eyebrow: "02 / A FIRST IMPRESSION",
@@ -99,7 +99,7 @@ export default {
   },
   amenities: {
     eyebrow: "03 / A PLACE FOR EVERYTHING",
-    title: "The things you\nactually need.",
+    title: "Everything for\neveryday life is planned.",
     intro:
       "You should not have to build a household from scratch. A kitchen, workspace, storage, furniture and internet provide the foundation. The details below distinguish the planned essentials from items still to be confirmed.",
     confirmed: "Planned essentials",
@@ -136,7 +136,7 @@ export default {
   },
   pricing: {
     eyebrow: "04 / CLEAR & SIMPLE",
-    title: "One home.\nOne monthly payment.",
+    title: "One home.\nCosts explained clearly.",
     intro:
       "The proposed monthly payment covers the furnished apartment, utilities, electricity and internet. The scope and terms are still subject to legal review.",
     rent: "Monthly rent",
@@ -180,34 +180,34 @@ export default {
     hint: "On request means unconfirmed. Marked occupied or reserved dates cannot be selected.",
   },
   profile: {
-    eyebrow: "A FEW MONTHS IN HAMBURG",
+    eyebrow: "SEVERAL MONTHS IN HAMBURG",
     title: "For your next\nchapter in Hamburg.",
     intro:
-      "For people making Hamburg home for a few months, in situations like these.",
+      "Perhaps you are starting a new job, working on a project for a few months, coming to Hamburg for a research stay or taking time during a move to look for a long-term home. The Princess is intended for stays of several months: longer than a hotel, simpler than furnishing a home from scratch and personal enough that you do not spend months feeling like a guest.",
     uses: [
-      "Relocating to Hamburg",
+      "A new job in Hamburg",
       "Project work or a temporary assignment",
       "Research or an academic stay",
-      "Starting a job or a probation period",
-      "Arriving before your family",
-      "A transition between homes",
+      "A probation period or fixed-term assignment",
+      "Settling in while looking for a home",
+      "The transition to your next home",
     ],
-    note: "Simply explain the purpose and planned length of your stay. We will discuss any supporting documents at the next stage.",
+    note: "Simply explain the purpose and planned length of your stay. We will discuss any supporting documents at the next stage. Prices, contract terms and individual furnishing details will only be confirmed after the lawyer appointment and before signing.",
     detail:
-      "{nickname} is made for that transition: longer than a hotel stay, simpler than furnishing a home from scratch — and personal enough that you do not spend months feeling like a guest.",
+      "Prices, contract terms and individual furnishing details will only be confirmed after the lawyer appointment and before signing.",
   },
   neighbourhood: {
     eyebrow: "06 / HAMBURG ON YOUR DOORSTEP",
     title: "New to the city.\nSoon part of the everyday.",
     intro:
-      "A practical starting point for Billstedt and eastern Hamburg. Find connections, everyday essentials and somewhere to take a break.",
+      "A practical starting point for Horn and eastern Hamburg. Find connections, everyday essentials and somewhere to take a break.",
     transport: {
       title: "Getting around with hvv",
-      text: "U2/U4 connect Billstedt station towards central Hamburg. Plan your journey to work, university, the main station or the airport directly with hvv.",
+      text: "U-Bahn and bus connections from Horn make it easy to reach central Hamburg. Plan your journey to work, university, the main station or the airport directly with hvv.",
       link: "Plan a journey",
     },
     shopping: {
-      title: "Everyday errands at Billstedt Center",
+      title: "Everyday errands in Horn",
       text: "Shops and services in the district centre. Check current offerings and opening hours with the centre.",
       link: "Explore the centre",
     },
@@ -222,14 +222,14 @@ export default {
       link: "Explore the area",
     },
     note: "The nearest stop and precise travel times from the apartment are still being checked. Please confirm current services and opening hours.",
-    mapTitle: "Hamburg-Billstedt / Kroogblöcke",
+    mapTitle: "Hamburg-Horn / Kroogblöcke",
     mapText: "The map shows the approximate area, not the apartment entrance.",
     consent:
       "Loading the map connects to OpenStreetMap and transfers connection data, including your IP address.",
     load: "Load map",
     unload: "Remove map",
     external: "Open in OpenStreetMap",
-    frame: "Map of the approximate area in Hamburg-Billstedt",
+    frame: "Map of the approximate area in Hamburg-Horn",
   },
   steps: {
     eyebrow: "07 / A SIMPLE ARRIVAL",

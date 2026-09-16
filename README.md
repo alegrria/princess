@@ -1,6 +1,6 @@
 # Princess — Kroogblöcke 2
 
-A bilingual, mobile-first furnished-apartment SPA for **Kroogblöcke 2, Hamburg-Billstedt**, with an editorial clay/green/wood design. The private GitHub repository is [alegrria/princess](https://github.com/alegrria/princess).
+A bilingual, mobile-first furnished-apartment SPA for **Kroogblöcke 2, Hamburg-Horn**, with an editorial clay/green/wood design. The private GitHub repository is [alegrria/princess](https://github.com/alegrria/princess).
 
 ## Run
 
@@ -34,7 +34,7 @@ npm run format:check
 | FAQ order and official references                           | `src/data/faq.js`                         |
 | German/English text and legal answers                       | `src/locales/de.js`, `src/locales/en.js`  |
 
-`null` means **unconfirmed**, not zero. The site deliberately has no invented rent, deposit, availability, owner contact or policies. The proposed 3-month minimum / 6-month contract is labelled as subject to the final legally reviewed agreement. The Billstedt location follows the supplied brief; verify the exact district designation and nearest station before public release.
+`null` means **unconfirmed**, not zero. The site deliberately has no invented rent, deposit, availability, owner contact or policies. The proposed 3-month minimum / 6-month contract is labelled as subject to the final legally reviewed agreement. The Horn location should be verified with the exact district designation and nearest station before public release.
 
 ## Features
 

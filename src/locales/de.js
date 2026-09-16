@@ -22,7 +22,7 @@ export default {
   hero: {
     eyebrow: "EIN KLEINES ZUHAUSE. EIN NEUES KAPITEL.",
     title: "Ankommen.\nAuf deine Art.",
-    subtitle: "Möbliertes Apartment in Hamburg-Billstedt",
+    subtitle: "Möbliertes Apartment in Hamburg-Horn",
     text: "Ein durchdachtes Zuhause für deine Zeit in Hamburg. Komplett möbliert, ruhig gestaltet und für einen guten Alltag eingerichtet.",
     monthly: "Monatliche Miete",
     stay: "Geplante Mindestdauer",
@@ -200,14 +200,14 @@ export default {
     eyebrow: "06 / HAMBURG VOR DER TÜR",
     title: "Neu in der Stadt.\nBald im Alltag zuhause.",
     intro:
-      "Ein praktischer Startpunkt für Billstedt und den Hamburger Osten. Entdecke Verbindungen, Besorgungen und Orte für eine Pause.",
+      "Ein praktischer Startpunkt für Horn und den Hamburger Osten. Entdecke Verbindungen, Besorgungen und Orte für eine Pause.",
     transport: {
       title: "Unterwegs mit dem hvv",
-      text: "Ab U Billstedt führen U2/U4 in Richtung Innenstadt. Plane den Weg zur Arbeit, zur Hochschule, zum Hauptbahnhof oder zum Flughafen direkt beim hvv.",
+      text: "Von Horn führen U-Bahn- und Busverbindungen in Richtung Innenstadt. Plane den Weg zur Arbeit, zur Hochschule, zum Hauptbahnhof oder zum Flughafen direkt beim hvv.",
       link: "Verbindung planen",
     },
     shopping: {
-      title: "Besorgungen im Billstedt Center",
+      title: "Besorgungen im Stadtteil Horn",
       text: "Geschäfte und Services im Stadtteilzentrum. Aktuelle Angebote und Öffnungszeiten direkt beim Center prüfen.",
       link: "Center entdecken",
     },
@@ -222,7 +222,7 @@ export default {
       link: "Umgebung erkunden",
     },
     note: "Die nächste Haltestelle und genaue Wegezeiten ab dem Apartment werden noch geprüft. Verbindungen und Öffnungszeiten bitte aktuell nachsehen.",
-    mapTitle: "Hamburg-Billstedt / Kroogblöcke",
+    mapTitle: "Hamburg-Horn / Kroogblöcke",
     mapText:
       "Die Karte zeigt die ungefähre Umgebung, nicht den Wohnungseingang.",
     consent:
@@ -230,7 +230,7 @@ export default {
     load: "Karte laden",
     unload: "Karte entfernen",
     external: "In OpenStreetMap öffnen",
-    frame: "Karte der ungefähren Umgebung in Hamburg-Billstedt",
+    frame: "Karte der ungefähren Umgebung in Hamburg-Horn",
   },
   steps: {
     eyebrow: "07 / ENTSPANNT ANKOMMEN",

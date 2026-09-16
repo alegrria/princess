@@ -3,7 +3,7 @@ export const apartment = {
   name: "Kroogblöcke 2",
   nickname: "The Princess",
   city: "Hamburg",
-  district: "Billstedt",
+  district: "Horn",
   size: 31.75,
   rooms: 1,
   floor: 0,

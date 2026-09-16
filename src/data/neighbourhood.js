@@ -1,6 +1,6 @@
 export const neighbourhood = {
-  area: "Hamburg-Billstedt / Kroogblöcke",
-  // Broad Billstedt/Horn area; deliberately no entrance marker.
+  area: "Hamburg-Horn / Kroogblöcke",
+  // Broad Horn area; deliberately no entrance marker.
   mapUrl:
     "https://www.openstreetmap.org/export/embed.html?bbox=10.060%2C53.530%2C10.140%2C53.570&layer=mapnik",
   mapLink:
@@ -16,8 +16,8 @@ export const neighbourhood = {
     {
       id: "shopping",
       group: "daily",
-      url: "https://www.billstedt-center.de/en/service/",
-      source: "Billstedt Center",
+      url: "https://www.hamburg.de/branchenbuch/hamburg/eintrag/10227422/",
+      source: "Horn entdecken",
       checked: "2026-09-15",
     },
     {
@@ -30,7 +30,7 @@ export const neighbourhood = {
     {
       id: "essentials",
       group: "daily",
-      url: "https://www.openstreetmap.org/search?query=Billstedt%20Hamburg",
+      url: "https://www.openstreetmap.org/search?query=Horn%20Hamburg",
       source: "OpenStreetMap",
       checked: null,
     },

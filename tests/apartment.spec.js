@@ -229,7 +229,7 @@ test("map is opt-in and removable", async ({ page }) => {
   await page.getByRole("button", { name: "Load map", exact: true }).click();
   await expect(page.locator("iframe")).toHaveAttribute(
     "title",
-    "Map of the approximate area in Hamburg-Billstedt",
+    "Map of the approximate area in Hamburg-Horn",
   );
   await page.getByRole("button", { name: "Remove map" }).click();
   await expect(page.locator("iframe")).toHaveCount(0);
@@ -258,10 +258,10 @@ test("metadata includes social image and apartment facts without invented offers
   request,
 }) => {
   await english(page);
-  await expect(page).toHaveTitle(/Hamburg-Billstedt/);
+  await expect(page).toHaveTitle(/Hamburg-Horn/);
   await expect(page.locator('meta[property="og:title"]')).toHaveAttribute(
     "content",
-    /Hamburg-Billstedt/,
+    /Hamburg-Horn/,
   );
   await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
     "content",
@@ -287,16 +287,22 @@ test("copy listing uses the configured canonical origin", async ({ page }) => {
 
 for (const width of [320, 390]) {
   for (const lang of ["de", "en"]) {
-    test(`narrow ${width}px ${lang} layout and inquiry affordances`, async ({ page }) => {
+    test(`narrow ${width}px ${lang} layout and inquiry affordances`, async ({
+      page,
+    }) => {
       await page.setViewportSize({ width, height: 844 });
       await page.emulateMedia({ reducedMotion: "reduce" });
       await page.goto(`/?lang=${lang}`);
-      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+      expect(
+        await page.evaluate(() => document.documentElement.scrollWidth),
+      ).toBeLessThanOrEqual(width);
       await expect(page.locator(".hero-description")).toBeVisible();
       await expect(page.locator(".mobile-sticky")).toBeHidden();
       await page.locator("#menu-button").click();
       await expect(page.locator("#mobile-menu")).toBeVisible();
-      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+      expect(
+        await page.evaluate(() => document.documentElement.scrollWidth),
+      ).toBeLessThanOrEqual(width);
       await page.locator('#mobile-menu a[href="#apartment"]').click();
       await expect(page.locator(".mobile-sticky")).toBeVisible();
       await page.locator("#inquiry").scrollIntoViewIfNeeded();
@@ -309,7 +315,9 @@ for (const width of [320, 390]) {
       expect(Math.abs(email.x - first.x)).toBeLessThan(1);
       await page.locator(".document-accordion summary").click();
       await expect(page.locator("#documents a[download]")).toBeVisible();
-      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+      expect(
+        await page.evaluate(() => document.documentElement.scrollWidth),
+      ).toBeLessThanOrEqual(width);
     });
   }
 }
