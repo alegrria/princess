@@ -141,6 +141,16 @@ export default {
       "The proposed monthly payment covers the furnished apartment, utilities, electricity and internet. The scope and terms are still subject to legal review.",
     rent: "Monthly rent",
     unknown: "Rent to be confirmed",
+    standardLabel: "MONTHLY RENT",
+    standardAmount: "€1,050",
+    academicLabel: "ACADEMIC RENT",
+    academicAmount: "€950",
+    academicQualification:
+      "per month · subject to eligibility and confirmation",
+    clarification:
+      "The monthly rent is expected to be €1,050. Eligible people from the academic community may qualify for a reduced rent of €950. Requirements, supporting documents and details will be confirmed before signing.",
+    academicNote:
+      "The academic rent depends on specific requirements. Whether it applies in your case will be checked in a personal conversation. The final legal review and signed rental agreement are decisive.",
     perMonth: "per month",
     deposit: "Deposit",
     toConfirm: "To be confirmed",
@@ -352,6 +362,7 @@ export default {
     source: "Official information",
     questions: {
       included: "What is included in the rent?",
+      academicRent: "Is there a reduced academic rent?",
       minimum: "What is the minimum stay?",
       registration: "Is residence registration possible?",
       furnished: "Is the apartment furnished?",
@@ -373,6 +384,8 @@ export default {
     answers: {
       included:
         "The concept includes furnishings, utilities, electricity and internet in one monthly payment. The final price and contractual scope are still to be confirmed.",
+      academicRent:
+        "Eligible students, doctoral candidates, visiting researchers and university staff may qualify for a reduced monthly rent of €950. Eligibility, required documents and the exact scope of what is included will be reviewed and confirmed before signing.",
       minimum:
         "The planned initial minimum is {minimum} months. The specific contract will be legally reviewed before signing.",
       registration:

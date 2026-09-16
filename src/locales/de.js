@@ -141,6 +141,16 @@ export default {
       "Geplant ist eine monatliche Zahlung für das möblierte Apartment, Nebenkosten, Strom und Internet. Umfang und Bedingungen werden noch rechtlich geprüft.",
     rent: "Monatliche Miete",
     unknown: "Mietpreis wird ergänzt",
+    standardLabel: "MONATLICHE MIETE",
+    standardAmount: "1.050 €",
+    academicLabel: "AKADEMISCHE MIETE",
+    academicAmount: "950 €",
+    academicQualification:
+      "pro Monat · vorbehaltlich Berechtigung und Bestätigung",
+    clarification:
+      "Die monatliche Miete beträgt voraussichtlich 1.050 €. Für berechtigte Personen aus dem akademischen Bereich ist eine reduzierte Miete von voraussichtlich 950 € möglich. Voraussetzungen, Nachweise und Einzelheiten werden vor Vertragsschluss verbindlich geklärt.",
+    academicNote:
+      "Die akademische Miete ist an bestimmte Voraussetzungen geknüpft. Ob sie in deinem Fall gilt, wird im persönlichen Austausch geprüft. Maßgeblich sind die abschließende rechtliche Prüfung und der unterzeichnete Mietvertrag.",
     perMonth: "pro Monat",
     deposit: "Kaution",
     toConfirm: "Wird bestätigt",
@@ -352,6 +362,7 @@ export default {
     source: "Offizielle Informationen",
     questions: {
       included: "Was ist in der Miete enthalten?",
+      academicRent: "Gibt es eine reduzierte akademische Miete?",
       minimum: "Wie lange muss ich mindestens bleiben?",
       registration: "Ist eine Anmeldung möglich?",
       furnished: "Ist das Apartment möbliert?",
@@ -373,6 +384,8 @@ export default {
     answers: {
       included:
         "Vorgesehen sind Möblierung, Nebenkosten, Strom und Internet in einer monatlichen Zahlung. Der endgültige Betrag und Vertragsumfang werden noch bestätigt.",
+      academicRent:
+        "Für berechtigte Studierende, Promovierende, Gastwissenschaftler und Hochschulangehörige ist voraussichtlich eine reduzierte monatliche Miete von 950 € möglich. Die Berechtigung, erforderliche Nachweise und der genaue Leistungsumfang werden vor Vertragsschluss geprüft und bestätigt.",
       minimum:
         "Die anfängliche Mindestdauer ist mit {minimum} Monaten geplant. Der konkrete Vertrag wird vor Abschluss rechtlich geprüft.",
       registration:

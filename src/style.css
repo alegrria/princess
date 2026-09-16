@@ -633,6 +633,27 @@ details[open] summary span {
   border-left: 1px solid #687365;
   padding-left: 50px;
 }
+.pricing-options {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+.pricing-options > div {
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: #fffdf8;
+}
+.pricing-options .price {
+  margin-top: 6px;
+}
+.pricing-options span {
+  display: block;
+  font-size: 12px;
+  line-height: 1.45;
+}
+.pricing-clarification {
+  margin: 20px 0 12px;
+}
 .price {
   font-family: var(--serif);
   font-size: 34px;

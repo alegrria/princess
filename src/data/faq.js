@@ -1,5 +1,6 @@
 export const faq = [
   "included",
+  "academicRent",
   "minimum",
   "registration",
   "furnished",
