@@ -4,7 +4,7 @@ export const apartment = {
   nickname: "The Princess",
   city: "Hamburg",
   district: "Horn",
-  size: 31.75,
+  size: 32,
   rooms: 1,
   floor: 0,
   furnished: true,

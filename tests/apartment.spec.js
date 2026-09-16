@@ -45,7 +45,7 @@ test("German first page has correct facts, real images and no automatic third-pa
   await page.goto("/");
   await expect(page.locator("html")).toHaveAttribute("lang", "de");
   await expect(page.locator("h1")).toContainText("Ankommen.");
-  await expect(page.locator(".hero")).toContainText("31,75");
+  await expect(page.locator(".hero")).toContainText("32");
   await expect(page.locator(".hero")).toContainText("3 Monate");
   await expect(page.locator(".hero")).toContainText("1.050 €");
   await expect(page.locator(".hero")).toContainText("950 €");
@@ -271,7 +271,7 @@ test("metadata includes social image and apartment facts without invented offers
   const schema = JSON.parse(
     await page.locator('script[type="application/ld+json"]').textContent(),
   );
-  expect(schema.floorSize.value).toBe(31.75);
+  expect(schema.floorSize.value).toBe(32);
   expect(schema.offers).toBeUndefined();
   expect((await request.get("/images/social.jpg")).ok()).toBe(true);
 });
