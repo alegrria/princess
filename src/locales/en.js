@@ -25,6 +25,8 @@ export default {
     subtitle: "Furnished apartment in Hamburg-Horn",
     text: "A thoughtfully prepared home for your time in Hamburg. Fully furnished, calmly designed and ready for everyday life.",
     monthly: "Monthly rent",
+    rentStandard: "€1,050",
+    rentAcademic: "€950 academic · provisional",
     stay: "Proposed minimum stay",
     furnished: "Furnished",
     floor: "Ground floor",

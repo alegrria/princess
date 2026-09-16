@@ -25,6 +25,8 @@ export default {
     subtitle: "Möbliertes Apartment in Hamburg-Horn",
     text: "Ein durchdachtes Zuhause für deine Zeit in Hamburg. Komplett möbliert, ruhig gestaltet und für einen guten Alltag eingerichtet.",
     monthly: "Monatliche Miete",
+    rentStandard: "1.050 €",
+    rentAcademic: "950 € akademisch · voraussichtlich",
     stay: "Geplante Mindestdauer",
     furnished: "Möbliert",
     floor: "Erdgeschoss",

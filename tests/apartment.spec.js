@@ -47,7 +47,8 @@ test("German first page has correct facts, real images and no automatic third-pa
   await expect(page.locator("h1")).toContainText("Ankommen.");
   await expect(page.locator(".hero")).toContainText("31,75");
   await expect(page.locator(".hero")).toContainText("3 Monate");
-  await expect(page.locator(".hero")).toContainText("Wird ergänzt");
+  await expect(page.locator(".hero")).toContainText("1.050 €");
+  await expect(page.locator(".hero")).toContainText("950 €");
   await expect(page.locator(".hero")).not.toContainText("Berlin");
   await expect(page.locator("iframe")).toHaveCount(0);
   expect(

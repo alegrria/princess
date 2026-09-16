@@ -642,6 +642,7 @@ details[open] summary span {
   padding: 18px;
   border: 1px solid var(--line);
   background: #fffdf8;
+  color: var(--ink);
 }
 .pricing-options .price {
   margin-top: 6px;
@@ -650,6 +651,7 @@ details[open] summary span {
   display: block;
   font-size: 12px;
   line-height: 1.45;
+  color: var(--muted);
 }
 .pricing-clarification {
   margin: 20px 0 12px;
@@ -1699,6 +1701,12 @@ body:has(dialog[open]) {
   .lightbox-controls p {
     font-size: 12px;
   }
+}
+.hero-rate small {
+  display: block;
+  margin-top: 4px;
+  color: #586257;
+  font-size: 12px;
 }
 @media (max-width: 360px) {
   .hero-copy {
