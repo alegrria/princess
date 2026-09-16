@@ -25,14 +25,15 @@ export default {
     subtitle: "Furnished apartment in Hamburg-Billstedt",
     text: "A thoughtfully prepared home for your time in Hamburg. Fully furnished, calmly designed and ready for everyday life.",
     monthly: "Monthly rent",
-    stay: "Minimum stay",
+    stay: "Proposed minimum stay",
     furnished: "Furnished",
     floor: "Ground floor",
     rooms: "1 room",
     size: "approx. {size} m²",
     months: "{n} months",
     rentUnknown: "To be confirmed",
-    draft: "Preview · Rent and availability are awaiting confirmation.",
+    draft:
+      "Preview · Rent, availability and rental terms are not yet confirmed.",
     imageNote: "AI design concept · not a photo of the current apartment",
   },
   status: {
@@ -49,19 +50,19 @@ export default {
     title: "A temporary home.\nNothing provisional\nabout it.",
     text: "{nickname} is a carefully furnished apartment for people making Hamburg home for a few months — for a new job, a project, a research stay or a first settled base while relocating.",
     detail:
-      "Around {size} m² arranged for an uncomplicated everyday life: a sleeping area, a proper workspace, a furnished kitchen, storage and a living and dining area where you want to spend time after a long day.",
+      "Around {size} m² arranged for an uncomplicated everyday life: a sleeping area, a proper workspace, a kitchen, storage and a living and dining area where you want to spend time after a long day.",
     facts: [
       "Furnished",
       "Workspace",
-      "Furnished kitchen",
-      "Internet included",
-      "Utilities included",
+      "Kitchen",
+      "Internet planned",
+      "Utilities planned",
       "Ground floor",
     ],
     character:
       "The furnishings are considered as a whole. Warm materials, quiet colours, carefully chosen furniture and small details give the apartment its own character — understated and comfortable, without feeling like a hotel.",
     arrival:
-      "Arrive, unpack, carry on with life. Furniture, a workspace and internet are part of the living concept, leaving you more time for whatever brought you to Hamburg.",
+      "Arrive, unpack, settle in. Furniture and a workspace are provided; internet is planned as part of the monthly rent.",
   },
   gallery: {
     eyebrow: "02 / A FIRST IMPRESSION",
@@ -109,7 +110,7 @@ export default {
     work: "Working",
     bathroom: "Bathroom & laundry",
     items: {
-      furnishedKitchen: "Furnished kitchen",
+      furnishedKitchen: "Kitchen",
       fridge: "Refrigerator",
       dishwasher: "Dishwasher",
       oven: "Oven",
@@ -137,16 +138,21 @@ export default {
     eyebrow: "04 / CLEAR & SIMPLE",
     title: "One home.\nOne monthly payment.",
     intro:
-      "The all-inclusive concept covers the furnished apartment, utilities, electricity and internet.",
+      "The proposed monthly payment covers the furnished apartment, utilities, electricity and internet. The scope and terms are still subject to legal review.",
     rent: "Monthly rent",
     unknown: "Rent to be confirmed",
     perMonth: "per month",
     deposit: "Deposit",
     toConfirm: "To be confirmed",
-    minimum: "Initial minimum stay",
+    minimum: "Proposed minimum stay",
     contract: "Planned contract length",
     included: "Included in the rental concept",
-    items: ["Furnishings", "Utilities", "Electricity", "Internet"],
+    items: [
+      "Furnishings proposed",
+      "Utilities proposed",
+      "Electricity proposed",
+      "Internet proposed",
+    ],
     legal:
       "The proposed term is {standard} months, with an agreed monthly termination option after an initial {minimum} months. Only the final, legally reviewed contract will be binding.",
     note: "Prices and full terms will be confirmed before signing.",
@@ -156,7 +162,7 @@ export default {
     eyebrow: "05 / WHEN WORKS FOR YOU?",
     title: "Your time\nin Hamburg.",
     intro:
-      "Check availability and choose your preferred move-in and move-out dates. You can then make a non-binding enquiry about your stay.",
+      "Choose your preferred move-in and move-out dates. Dates marked on request are unconfirmed; selecting them does not reserve a stay.",
     unknown: "Not yet confirmed",
     prev: "Previous month",
     next: "Next month",
@@ -164,7 +170,8 @@ export default {
     start: "Move-in",
     end: "Move-out",
     ask: "Ask about these dates",
-    select: "Choose move-in first, then move-out.",
+    select:
+      "Choose move-in first, then move-out. This preview uses a provisional {minimum}-month minimum, subject to contract review.",
     selected: "Selected dates",
     reset: "Clear selection",
     empty: "No dates selected yet",
@@ -176,7 +183,7 @@ export default {
     eyebrow: "A FEW MONTHS IN HAMBURG",
     title: "For your next\nchapter in Hamburg.",
     intro:
-      "Perhaps you are starting a new job, working on a project for a few months, visiting as a researcher or taking time to settle in before finding a long-term home.",
+      "For people making Hamburg home for a few months, in situations like these.",
     uses: [
       "Relocating to Hamburg",
       "Project work or a temporary assignment",
@@ -297,7 +304,8 @@ export default {
     invalidDate: "Please choose valid move-in and move-out dates.",
     pastDate: "Move-in cannot be in the past.",
     dateOrder: "Move-out must be after move-in.",
-    minimumStay: "Please request at least {minimum} months.",
+    minimumStay:
+      "This preview uses a provisional minimum of {minimum} months, subject to contract review.",
     blockedPeriod: "These dates overlap an occupied or reserved period.",
     beforeAvailability: "Move-in is before the stated availability date.",
     invalidOccupants: "Please enter a valid number of occupants.",
@@ -336,6 +344,7 @@ export default {
     broadcast: "Information about the broadcasting contribution",
     insurance:
       "Personal liability insurance: check your existing cover and discuss the details with your insurer.",
+    bundle: "Documents for your move-in",
   },
   faq: {
     eyebrow: "09 / ANYTHING ELSE?",
@@ -435,7 +444,7 @@ export default {
   design: {
     eyebrow: "THOUGHTFULLY FURNISHED",
     title: "Small, but never\nan afterthought.",
-    text: "Every square metre has a purpose. Sleeping, working, cooking and eating each have their place. Storage and furnishings are considered together, so a longer stay can settle into a comfortable everyday routine.",
+    text: "The design brings together warm wood, deep green and soft wall colours, with glass and a few playful details.",
     detail:
       "Warm wood and natural tones meet deep green, soft wall colours, glass and a few unexpected details. Quiet enough to work and unwind — personal enough to feel at home.",
   },

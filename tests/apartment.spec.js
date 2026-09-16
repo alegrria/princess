@@ -136,7 +136,7 @@ test("short and reversed calendar requests are not staged", async ({
   await page.locator("#availability-end").fill("2030-05-01");
   await page.getByRole("button", { name: "Ask about these dates" }).click();
   await expect(page.locator("#calendar-status")).toContainText(
-    "at least 3 months",
+    "provisional minimum of 3 months",
   );
   await expect(
     page.getByLabel("Preferred move-in", { exact: true }),
@@ -284,3 +284,32 @@ test("copy listing uses the configured canonical origin", async ({ page }) => {
     "the-linden-flat.bmbbnthtnh.chatgpt.site/?lang=en",
   );
 });
+
+for (const width of [320, 390]) {
+  for (const lang of ["de", "en"]) {
+    test(`narrow ${width}px ${lang} layout and inquiry affordances`, async ({ page }) => {
+      await page.setViewportSize({ width, height: 844 });
+      await page.emulateMedia({ reducedMotion: "reduce" });
+      await page.goto(`/?lang=${lang}`);
+      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+      await expect(page.locator(".hero-description")).toBeVisible();
+      await expect(page.locator(".mobile-sticky")).toBeHidden();
+      await page.locator("#menu-button").click();
+      await expect(page.locator("#mobile-menu")).toBeVisible();
+      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+      await page.locator('#mobile-menu a[href="#apartment"]').click();
+      await expect(page.locator(".mobile-sticky")).toBeVisible();
+      await page.locator("#inquiry").scrollIntoViewIfNeeded();
+      await expect(page.locator(".mobile-sticky")).toBeHidden();
+      const note = await page.locator(".form-preview-note").boundingBox();
+      const first = await page.locator('[name="name"]').boundingBox();
+      expect(note.y + note.height).toBeLessThan(first.y);
+      const email = await page.locator('[name="email"]').boundingBox();
+      expect(email.y).toBeGreaterThan(first.y + first.height);
+      expect(Math.abs(email.x - first.x)).toBeLessThan(1);
+      await page.locator(".document-accordion summary").click();
+      await expect(page.locator("#documents a[download]")).toBeVisible();
+      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+    });
+  }
+}

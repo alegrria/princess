@@ -87,6 +87,24 @@ function updateMetadata() {
   document.querySelector('link[rel="canonical"]').href = url;
   document.querySelector('meta[property="og:url"]').content = url;
 }
+let stickyObserver;
+function watchInquiryButton() {
+  stickyObserver?.disconnect();
+  const sticky = document.querySelector(".mobile-sticky");
+  const hero = document.querySelector(".hero-buttons");
+  const inquiry = document.getElementById("inquiry");
+  if (!sticky || !hero || !inquiry) return;
+  const update = () => {
+    const heroBox = hero.getBoundingClientRect();
+    const formBox = inquiry.getBoundingClientRect();
+    sticky.hidden =
+      heroBox.bottom > 0 || (formBox.top < innerHeight && formBox.bottom > 0);
+  };
+  stickyObserver = new IntersectionObserver(update, { threshold: [0, 1] });
+  stickyObserver.observe(hero);
+  stickyObserver.observe(inquiry);
+  update();
+}
 function render() {
   saveDraft();
   root.innerHTML =
@@ -98,6 +116,7 @@ function render() {
   const form = document.getElementById("inquiry-form");
   if (form) form.addEventListener("submit", submitInquiry);
   applyGalleryFilter();
+  watchInquiryButton();
 }
 function renderCalendar() {
   const calendar = document.getElementById("calendar");

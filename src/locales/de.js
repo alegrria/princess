@@ -25,14 +25,15 @@ export default {
     subtitle: "Möbliertes Apartment in Hamburg-Billstedt",
     text: "Ein durchdachtes Zuhause für deine Zeit in Hamburg. Komplett möbliert, ruhig gestaltet und für einen guten Alltag eingerichtet.",
     monthly: "Monatliche Miete",
-    stay: "Mindestaufenthalt",
+    stay: "Geplante Mindestdauer",
     furnished: "Möbliert",
     floor: "Erdgeschoss",
     rooms: "1 Zimmer",
     size: "ca. {size} m²",
     months: "{n} Monate",
     rentUnknown: "Wird ergänzt",
-    draft: "Vorschau · Mietpreis und Verfügbarkeit werden noch bestätigt.",
+    draft:
+      "Vorschau · Miete, Verfügbarkeit und Vertragsbedingungen sind noch nicht bestätigt.",
     imageNote: "KI-Gestaltungskonzept · kein Foto des aktuellen Apartments",
   },
   status: {
@@ -47,21 +48,21 @@ export default {
   overview: {
     eyebrow: "01 / DEIN ZUHAUSE AUF ZEIT",
     title: "Ein Zuhause auf Zeit,\ndas sich nicht nach\nÜbergang anfühlt.",
-    text: "{nickname} ist ein sorgfältig eingerichtetes, möbliertes Apartment für Menschen, die für einige Monate in Hamburg ankommen — beruflich, für ein Projekt, einen Forschungsaufenthalt oder als ersten festen Ort während eines Umzugs.",
+    text: "{nickname} ist als sorgfältig eingerichtetes, möbliertes Apartment für Menschen gedacht, die für einige Monate in Hamburg ankommen — beruflich, für ein Projekt, einen Forschungsaufenthalt oder als ersten festen Ort während eines Umzugs.",
     detail:
       "Auf rund {size} m² ist alles auf einen unkomplizierten Alltag abgestimmt: ein eigener Schlafbereich, ein richtiger Arbeitsplatz, eine möblierte Küche, Stauraum sowie ein Wohn- und Essbereich, in dem man nach einem langen Tag gern bleibt.",
     facts: [
-      "Möbliert",
-      "Arbeitsplatz",
-      "Möblierte Küche",
-      "Internet inklusive",
-      "Nebenkosten inklusive",
+      "Möblierung vorgesehen",
+      "Arbeitsplatz vorgesehen",
+      "Möblierte Küche vorgesehen",
+      "Internet vorgesehen",
+      "Nebenkosten vorgesehen",
       "Erdgeschoss",
     ],
     character:
       "Die Einrichtung ist als Ganzes gedacht. Warme Materialien, ruhige Farben, ausgewählte Möbel und kleine Details geben der Wohnung einen eigenen Charakter — zurückhaltend und wohnlich, ohne sich wie ein Hotel anzufühlen.",
     arrival:
-      "Ankommen, auspacken, weiterleben. Möbel, Arbeitsplatz und Internet gehören zum Wohnkonzept. So bleibt mehr Zeit für das, weswegen du in Hamburg bist.",
+      "Ankommen, auspacken, weiterleben. Möbel und Arbeitsplatz sind als Teil des Wohnkonzepts vorgesehen; Internet ist als Teil der monatlichen Miete geplant.",
   },
   gallery: {
     eyebrow: "02 / EIN ERSTER EINDRUCK",
@@ -98,7 +99,7 @@ export default {
   },
   amenities: {
     eyebrow: "03 / ALLES HAT SEINEN PLATZ",
-    title: "Alles da, was du\nwirklich brauchst.",
+    title: "Alles für deinen\nAlltag ist vorgesehen.",
     intro:
       "Du sollst nicht erst einen Haushalt aufbauen müssen. Küche, Arbeitsplatz, Stauraum, Möbel und Internet bilden die Grundlage. Die folgenden Angaben zeigen, was vorgesehen ist und welche Details noch bestätigt werden.",
     confirmed: "Vorgesehen",
@@ -135,18 +136,23 @@ export default {
   },
   pricing: {
     eyebrow: "04 / KLAR & ÜBERSICHTLICH",
-    title: "Ein Zuhause.\nEine monatliche Zahlung.",
+    title: "Ein Zuhause.\nDie Kosten werden transparent geklärt.",
     intro:
-      "Das All-inclusive-Konzept umfasst das möblierte Apartment, Nebenkosten, Strom und Internet.",
+      "Geplant ist eine monatliche Zahlung für das möblierte Apartment, Nebenkosten, Strom und Internet. Umfang und Bedingungen werden noch rechtlich geprüft.",
     rent: "Monatliche Miete",
     unknown: "Mietpreis wird ergänzt",
     perMonth: "pro Monat",
     deposit: "Kaution",
     toConfirm: "Wird bestätigt",
-    minimum: "Anfängliche Mindestdauer",
+    minimum: "Geplante Mindestdauer",
     contract: "Vorgesehene Vertragsdauer",
     included: "Im Mietkonzept enthalten",
-    items: ["Möblierung", "Nebenkosten", "Strom", "Internet"],
+    items: [
+      "Möblierung vorgesehen",
+      "Nebenkosten vorgesehen",
+      "Strom vorgesehen",
+      "Internet vorgesehen",
+    ],
     legal:
       "Geplant ist ein Vertrag über {standard} Monate mit vereinbarter monatlicher Kündigungsmöglichkeit nach zunächst {minimum} Monaten. Maßgeblich ist ausschließlich der abschließend rechtlich geprüfte Vertrag.",
     note: "Preise und Einzelheiten werden vor Vertragsschluss verbindlich geklärt.",
@@ -156,7 +162,7 @@ export default {
     eyebrow: "05 / WANN PASST ES FÜR DICH?",
     title: "Dein Zeitraum\nin Hamburg.",
     intro:
-      "Prüfe hier die Verfügbarkeit und wähle deinen gewünschten Ein- und Auszug. Anschließend kannst du deinen Zeitraum unverbindlich anfragen.",
+      "Wähle deinen gewünschten Ein- und Auszug. Termine auf Anfrage sind noch nicht bestätigt; die Auswahl reserviert keinen Zeitraum.",
     unknown: "Noch nicht bestätigt",
     prev: "Vorheriger Monat",
     next: "Nächster Monat",
@@ -164,7 +170,8 @@ export default {
     start: "Einzug",
     end: "Auszug",
     ask: "Diesen Zeitraum anfragen",
-    select: "Zuerst Einzug, dann Auszug auswählen.",
+    select:
+      "Zuerst Einzug, dann Auszug auswählen. Die Vorschau verwendet vorläufig {minimum} Monate Mindestdauer; vorbehaltlich der Vertragsprüfung.",
     selected: "Gewählter Zeitraum",
     reset: "Auswahl zurücksetzen",
     empty: "Noch kein Zeitraum ausgewählt",
@@ -173,21 +180,21 @@ export default {
     hint: "Auf Anfrage bedeutet: noch nicht bestätigt. Markierte Belegungen können nicht ausgewählt werden.",
   },
   profile: {
-    eyebrow: "FÜR EIN PAAR MONATE HAMBURG",
+    eyebrow: "FÜR MEHRERE MONATE IN HAMBURG",
     title: "Für dein nächstes\nKapitel in Hamburg.",
     intro:
-      "Vielleicht beginnst du einen neuen Job, arbeitest für einige Monate an einem Projekt, kommst als Gastwissenschaftler:in nach Hamburg oder möchtest erst einmal in Ruhe ankommen, bevor du eine langfristige Wohnung suchst.",
+      "Vielleicht beginnst du einen neuen Job, arbeitest für einige Monate an einem Projekt, kommst für einen Forschungsaufenthalt nach Hamburg oder suchst während deines Umzugs in Ruhe nach einer langfristigen Wohnung. The Princess ist für mehrmonatige Aufenthalte gedacht: länger als ein Hotelaufenthalt, unkomplizierter als eine Wohnung von Grund auf einzurichten und persönlich genug, dass du dich nicht monatelang wie ein Gast fühlst.",
     uses: [
-      "Umzug nach Hamburg",
+      "Neuer Job in Hamburg",
       "Projekt oder berufliche Entsendung",
       "Forschungs- oder Hochschulaufenthalt",
-      "Beruflicher Start & Probezeit",
-      "Ankommen vor dem Familiennachzug",
-      "Übergang zwischen zwei Wohnungen",
+      "Probezeit oder befristeter Berufseinsatz",
+      "Ankommen während der Wohnungssuche",
+      "Übergang bis zur nächsten Wohnung",
     ],
-    note: "Beschreibe einfach den Anlass und die geplante Dauer deines Aufenthalts. Benötigte Nachweise besprechen wir erst im nächsten Schritt.",
+    note: "Beschreibe einfach den Anlass und die geplante Dauer deines Aufenthalts. Benötigte Nachweise besprechen wir erst im nächsten Schritt. Preise, Vertragsbedingungen und einzelne Ausstattungsdetails werden erst nach dem Anwaltstermin beziehungsweise vor Vertragsschluss verbindlich bestätigt.",
     detail:
-      "{nickname} ist für diese Übergangsphase gedacht: länger als ein Hotelaufenthalt, unkomplizierter als eine komplett eigene Wohnung einzurichten — und persönlich genug, dass du dich nicht monatelang wie ein Gast fühlst.",
+      "Preise, Vertragsbedingungen und einzelne Ausstattungsdetails werden erst nach dem Anwaltstermin beziehungsweise vor Vertragsschluss verbindlich bestätigt.",
   },
   neighbourhood: {
     eyebrow: "06 / HAMBURG VOR DER TÜR",
@@ -295,7 +302,8 @@ export default {
     invalidDate: "Bitte gültige Ein- und Auszugsdaten wählen.",
     pastDate: "Der Einzug darf nicht in der Vergangenheit liegen.",
     dateOrder: "Der Auszug muss nach dem Einzug liegen.",
-    minimumStay: "Bitte mindestens {minimum} Monate anfragen.",
+    minimumStay:
+      "Die Vorschau verwendet vorläufig mindestens {minimum} Monate. Diese Vorgabe steht unter Vorbehalt der Vertragsprüfung.",
     blockedPeriod:
       "Der Zeitraum überschneidet sich mit einer Belegung oder Reservierung.",
     beforeAvailability:
@@ -336,6 +344,7 @@ export default {
     broadcast: "Informationen zum Rundfunkbeitrag",
     insurance:
       "Privathaftpflicht: eigenen Versicherungsschutz prüfen; die Details klärst du am besten mit deinem Versicherer.",
+    bundle: "Unterlagen für deinen Einzug",
   },
   faq: {
     eyebrow: "09 / NOCH EINE FRAGE?",
@@ -435,7 +444,7 @@ export default {
   design: {
     eyebrow: "DURCHDACHT EINGERICHTET",
     title: "Klein, aber\nnicht provisorisch.",
-    text: "Jeder Quadratmeter wird bewusst genutzt. Schlafen, Arbeiten, Kochen und Essen haben ihren eigenen Platz. Stauraum und Einrichtung sind so aufeinander abgestimmt, dass sich hier auch ein längerer Aufenthalt nach Alltag anfühlen kann.",
+    text: "Warme Holztöne, dunkles Grün und sanfte Wandfarben prägen das Gestaltungskonzept. Glas und einzelne spielerische Details setzen kleine Akzente.",
     detail:
       "Warme Holz- und Naturtöne treffen auf dunkles Grün, sanfte Wandfarben, Glas und einzelne unerwartete Details. Ruhig genug zum Arbeiten und Abschalten — persönlich genug, um sich zuhause zu fühlen.",
   },
