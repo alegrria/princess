@@ -1,5 +1,6 @@
-import de from "./locales/de.js";
-import en from "./locales/en.js";
+import { getLocale } from "./lib/locale.js";
+const de = getLocale("de"),
+  en = getLocale("en");
 import { apartment } from "./data/apartment.js";
 import { gallery } from "./data/gallery.js";
 import { neighbourhood } from "./data/neighbourhood.js";

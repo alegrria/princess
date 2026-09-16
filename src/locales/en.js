@@ -1,8 +1,8 @@
 export default {
   lang: "en",
-  title: "Furnished Apartment in Hamburg-Billstedt | Kroogblöcke 2",
+  title: "Furnished Apartment in {city}-{district} | {name}",
   description:
-    "The Princess: approximately 31.75 m² of furnished temporary living in Hamburg-Billstedt. Explore the apartment, amenities, rental concept and availability.",
+    "{nickname}: around {size} m² of furnished temporary living in {city}-{district}. A considered home for work, research or your start in Hamburg.",
   nav: {
     apartment: "The apartment",
     availability: "Availability",
@@ -23,7 +23,7 @@ export default {
     eyebrow: "A SMALL HOME. A NEW CHAPTER.",
     title: "Settle in.\nMake it yours.",
     subtitle: "Furnished apartment in Hamburg-Billstedt",
-    text: "A thoughtfully prepared retreat for your time in Hamburg. Warm wood, little details and space for your everyday life.",
+    text: "A thoughtfully prepared home for your time in Hamburg. Fully furnished, calmly designed and ready for everyday life.",
     monthly: "Monthly rent",
     stay: "Minimum stay",
     furnished: "Furnished",
@@ -46,10 +46,10 @@ export default {
   },
   overview: {
     eyebrow: "01 / YOUR TEMPORARY HOME",
-    title: "Small in size.\nFull of home.",
-    text: "Approximately {size} m² with a place for sleeping, working, cooking and sitting down to a meal. This furnished ground-floor studio is designed for people making Hamburg home for a few months.",
+    title: "A temporary home.\nNothing provisional\nabout it.",
+    text: "{nickname} is a carefully furnished apartment for people making Hamburg home for a few months — for a new job, a project, a research stay or a first settled base while relocating.",
     detail:
-      "More than a stop along the way. A place of your own, where a new routine can start to feel familiar.",
+      "Around {size} m² arranged for an uncomplicated everyday life: a sleeping area, a proper workspace, a furnished kitchen, storage and a living and dining area where you want to spend time after a long day.",
     facts: [
       "Furnished",
       "Workspace",
@@ -58,6 +58,10 @@ export default {
       "Utilities included",
       "Ground floor",
     ],
+    character:
+      "The furnishings are considered as a whole. Warm materials, quiet colours, carefully chosen furniture and small details give the apartment its own character — understated and comfortable, without feeling like a hotel.",
+    arrival:
+      "Arrive, unpack, carry on with life. Furniture, a workspace and internet are part of the living concept, leaving you more time for whatever brought you to Hamburg.",
   },
   gallery: {
     eyebrow: "02 / A FIRST IMPRESSION",
@@ -80,7 +84,7 @@ export default {
     prev: "Previous image",
     next: "Next image",
     captions: {
-      concept: "Warm wood, quiet colours, considered little details.",
+      concept: "Thoughtfully arranged for everyday life.",
       bedroom: "Rest for the night. Room for the day ahead.",
       kitchen: "For the first coffee and dinner at home.",
     },
@@ -94,9 +98,9 @@ export default {
   },
   amenities: {
     eyebrow: "03 / A PLACE FOR EVERYTHING",
-    title: "Made for your everyday.",
+    title: "The things you\nactually need.",
     intro:
-      "The core furnishings are planned. Individual appliances, textiles and details will be confirmed in the final inventory.",
+      "You should not have to build a household from scratch. A kitchen, workspace, storage, furniture and internet provide the foundation. The details below distinguish the planned essentials from items still to be confirmed.",
     confirmed: "Planned essentials",
     pending: "To be confirmed",
     kitchen: "Kitchen",
@@ -150,9 +154,9 @@ export default {
   },
   availability: {
     eyebrow: "05 / WHEN WORKS FOR YOU?",
-    title: "Your dates.\nOur next step.",
+    title: "Your time\nin Hamburg.",
     intro:
-      "Choose your preferred move-in and move-out dates. We will then check whether they fit. Selecting dates is not a booking.",
+      "Check availability and choose your preferred move-in and move-out dates. You can then make a non-binding enquiry about your stay.",
     unknown: "Not yet confirmed",
     prev: "Previous month",
     next: "Next month",
@@ -170,9 +174,9 @@ export default {
   },
   profile: {
     eyebrow: "A FEW MONTHS IN HAMBURG",
-    title: "A good beginning\nfor your next chapter.",
+    title: "For your next\nchapter in Hamburg.",
     intro:
-      "A home of your own for a temporary stay — with a clear plan for arriving and moving on.",
+      "Perhaps you are starting a new job, working on a project for a few months, visiting as a researcher or taking time to settle in before finding a long-term home.",
     uses: [
       "Relocating to Hamburg",
       "Project work or a temporary assignment",
@@ -182,6 +186,8 @@ export default {
       "A transition between homes",
     ],
     note: "Simply explain the purpose and planned length of your stay. We will discuss any supporting documents at the next stage.",
+    detail:
+      "{nickname} is made for that transition: longer than a hotel stay, simpler than furnishing a home from scratch — and personal enough that you do not spend months feeling like a guest.",
   },
   neighbourhood: {
     eyebrow: "06 / HAMBURG ON YOUR DOORSTEP",
@@ -242,9 +248,9 @@ export default {
   },
   inquiry: {
     eyebrow: "YOUR NEXT HOME?",
-    title: "Let’s talk about\nyour time in Hamburg.",
+    title: "Could this be\nyour home in Hamburg?",
     intro:
-      "A few details are enough for the first contact. Please do not send identity, income or other sensitive documents here.",
+      "Tell us when you are coming to Hamburg, how long you would like to stay and what brings you to the city. No identity or income documents are needed for the first contact.",
     name: "Name",
     email: "Email",
     phone: "Phone",
@@ -275,7 +281,7 @@ export default {
       "Your email application will open. Please send the message there yourself.",
     sending: "Sending …",
     success:
-      "Thank you — I’ll check whether your dates fit the apartment and get back to you.",
+      "Thank you — we will check your dates and get back to you with availability and the next steps.",
     draftSuccess:
       "Your enquiry draft has been downloaded. It has not been sent. Once contact details are available, you can forward it.",
     emailSuccess:
@@ -425,5 +431,12 @@ export default {
     rightsTitle: "Contact and rights",
     rights:
       "The contact for privacy enquiries and full information about your rights will be added before publication. This draft is not yet a fully reviewed privacy notice.",
+  },
+  design: {
+    eyebrow: "THOUGHTFULLY FURNISHED",
+    title: "Small, but never\nan afterthought.",
+    text: "Every square metre has a purpose. Sleeping, working, cooking and eating each have their place. Storage and furnishings are considered together, so a longer stay can settle into a comfortable everyday routine.",
+    detail:
+      "Warm wood and natural tones meet deep green, soft wall colours, glass and a few unexpected details. Quiet enough to work and unwind — personal enough to feel at home.",
   },
 };

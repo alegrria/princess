@@ -1893,3 +1893,44 @@ body:has(dialog[open]) {
     print-color-adjust: exact;
   }
 }
+
+.design-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+.design-story > div:last-child {
+  padding-top: 35px;
+}
+.design-story > div:last-child > p + p {
+  color: var(--muted);
+  margin-top: 22px;
+}
+.arrival-line {
+  color: var(--ink);
+}
+@media (max-width: 700px) {
+  .design-story {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .design-story > div:last-child {
+    padding-top: 0;
+  }
+}
+@media print {
+  .design-story,
+  .overview .character,
+  .overview .arrival-line {
+    display: none !important;
+  }
+  .overview-copy > p:nth-child(3) {
+    display: none;
+  }
+  .overview h2 {
+    font-size: 23px;
+  }
+  .overview .lead {
+    font-size: 10px;
+  }
+}

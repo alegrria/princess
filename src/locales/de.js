@@ -1,8 +1,8 @@
 export default {
   lang: "de",
-  title: "Möbliertes Apartment in Hamburg-Billstedt | Kroogblöcke 2",
+  title: "Möbliertes Apartment in {city}-{district} | {name}",
   description:
-    "The Princess: ca. 31,75 m² möbliertes Wohnen auf Zeit in Hamburg-Billstedt. Ausstattung, Verfügbarkeit und Mietkonzept entdecken und den gewünschten Zeitraum anfragen.",
+    "{nickname}: rund {size} m² möbliertes Wohnen auf Zeit in {city}-{district}. Ein durchdachtes Zuhause für Beruf, Forschung oder deinen Start in Hamburg.",
   nav: {
     apartment: "Das Apartment",
     availability: "Verfügbarkeit",
@@ -23,7 +23,7 @@ export default {
     eyebrow: "EIN KLEINES ZUHAUSE. EIN NEUES KAPITEL.",
     title: "Ankommen.\nAuf deine Art.",
     subtitle: "Möbliertes Apartment in Hamburg-Billstedt",
-    text: "Ein durchdachter Rückzugsort für deine Zeit in Hamburg. Warmes Holz, kleine Lieblingsdetails und Platz für deinen Alltag.",
+    text: "Ein durchdachtes Zuhause für deine Zeit in Hamburg. Komplett möbliert, ruhig gestaltet und für einen guten Alltag eingerichtet.",
     monthly: "Monatliche Miete",
     stay: "Mindestaufenthalt",
     furnished: "Möbliert",
@@ -46,10 +46,10 @@ export default {
   },
   overview: {
     eyebrow: "01 / DEIN ZUHAUSE AUF ZEIT",
-    title: "Klein im Format.\nGroß im Zuhausegefühl.",
-    text: "Auf ca. {size} m² findet alles seinen Platz: schlafen, arbeiten, kochen und gemeinsam am Tisch sitzen. Das möblierte Einzimmerapartment im Erdgeschoss ist für Menschen gedacht, die für einige Monate in Hamburg ankommen.",
+    title: "Ein Zuhause auf Zeit,\ndas sich nicht nach\nÜbergang anfühlt.",
+    text: "{nickname} ist ein sorgfältig eingerichtetes, möbliertes Apartment für Menschen, die für einige Monate in Hamburg ankommen — beruflich, für ein Projekt, einen Forschungsaufenthalt oder als ersten festen Ort während eines Umzugs.",
     detail:
-      "Nicht einfach eine Zwischenstation. Sondern ein eigener Ort, an dem aus einem neuen Alltag langsam ein vertrauter wird.",
+      "Auf rund {size} m² ist alles auf einen unkomplizierten Alltag abgestimmt: ein eigener Schlafbereich, ein richtiger Arbeitsplatz, eine möblierte Küche, Stauraum sowie ein Wohn- und Essbereich, in dem man nach einem langen Tag gern bleibt.",
     facts: [
       "Möbliert",
       "Arbeitsplatz",
@@ -58,6 +58,10 @@ export default {
       "Nebenkosten inklusive",
       "Erdgeschoss",
     ],
+    character:
+      "Die Einrichtung ist als Ganzes gedacht. Warme Materialien, ruhige Farben, ausgewählte Möbel und kleine Details geben der Wohnung einen eigenen Charakter — zurückhaltend und wohnlich, ohne sich wie ein Hotel anzufühlen.",
+    arrival:
+      "Ankommen, auspacken, weiterleben. Möbel, Arbeitsplatz und Internet gehören zum Wohnkonzept. So bleibt mehr Zeit für das, weswegen du in Hamburg bist.",
   },
   gallery: {
     eyebrow: "02 / EIN ERSTER EINDRUCK",
@@ -80,7 +84,7 @@ export default {
     prev: "Vorheriges Bild",
     next: "Nächstes Bild",
     captions: {
-      concept: "Warmes Holz, ruhige Farben, kleine Lieblingsdetails.",
+      concept: "Durchdacht eingerichtet für einen guten Alltag.",
       bedroom: "Ruhe für die Nacht. Raum für den nächsten Tag.",
       kitchen: "Für den ersten Kaffee und das Abendessen zuhause.",
     },
@@ -94,9 +98,9 @@ export default {
   },
   amenities: {
     eyebrow: "03 / ALLES HAT SEINEN PLATZ",
-    title: "Für deinen Alltag eingerichtet.",
+    title: "Alles da, was du\nwirklich brauchst.",
     intro:
-      "Die Grundausstattung steht fest. Einzelne Geräte, Textilien und Details werden mit der finalen Inventarliste bestätigt.",
+      "Du sollst nicht erst einen Haushalt aufbauen müssen. Küche, Arbeitsplatz, Stauraum, Möbel und Internet bilden die Grundlage. Die folgenden Angaben zeigen, was vorgesehen ist und welche Details noch bestätigt werden.",
     confirmed: "Vorgesehen",
     pending: "Noch zu bestätigen",
     kitchen: "Küche",
@@ -150,9 +154,9 @@ export default {
   },
   availability: {
     eyebrow: "05 / WANN PASST ES FÜR DICH?",
-    title: "Dein Zeitraum.\nUnser nächster Schritt.",
+    title: "Dein Zeitraum\nin Hamburg.",
     intro:
-      "Wähle deinen gewünschten Ein- und Auszug. Wir prüfen anschließend, ob die Daten passen. Die Auswahl ist keine Buchung.",
+      "Prüfe hier die Verfügbarkeit und wähle deinen gewünschten Ein- und Auszug. Anschließend kannst du deinen Zeitraum unverbindlich anfragen.",
     unknown: "Noch nicht bestätigt",
     prev: "Vorheriger Monat",
     next: "Nächster Monat",
@@ -170,9 +174,9 @@ export default {
   },
   profile: {
     eyebrow: "FÜR EIN PAAR MONATE HAMBURG",
-    title: "Ein guter Anfang\nfür dein nächstes Kapitel.",
+    title: "Für dein nächstes\nKapitel in Hamburg.",
     intro:
-      "Ein eigenes Zuhause für einen zeitlich begrenzten Aufenthalt — mit einer klaren Perspektive für Einzug und Auszug.",
+      "Vielleicht beginnst du einen neuen Job, arbeitest für einige Monate an einem Projekt, kommst als Gastwissenschaftler:in nach Hamburg oder möchtest erst einmal in Ruhe ankommen, bevor du eine langfristige Wohnung suchst.",
     uses: [
       "Umzug nach Hamburg",
       "Projekt oder berufliche Entsendung",
@@ -182,6 +186,8 @@ export default {
       "Übergang zwischen zwei Wohnungen",
     ],
     note: "Beschreibe einfach den Anlass und die geplante Dauer deines Aufenthalts. Benötigte Nachweise besprechen wir erst im nächsten Schritt.",
+    detail:
+      "{nickname} ist für diese Übergangsphase gedacht: länger als ein Hotelaufenthalt, unkomplizierter als eine komplett eigene Wohnung einzurichten — und persönlich genug, dass du dich nicht monatelang wie ein Gast fühlst.",
   },
   neighbourhood: {
     eyebrow: "06 / HAMBURG VOR DER TÜR",
@@ -240,9 +246,9 @@ export default {
   },
   inquiry: {
     eyebrow: "DEIN NÄCHSTES ZUHAUSE?",
-    title: "Lass uns über\ndeine Zeit in Hamburg sprechen.",
+    title: "Könnte das dein\nZuhause in Hamburg sein?",
     intro:
-      "Ein paar Angaben genügen für den ersten Kontakt. Bitte sende hier keine Ausweis-, Einkommens- oder anderen sensiblen Dokumente.",
+      "Schreib uns kurz, wann du nach Hamburg kommst, wie lange du bleiben möchtest und was dich für diese Zeit in die Stadt bringt. Für den ersten Kontakt brauchst du keine Ausweis- oder Einkommensnachweise.",
     name: "Name",
     email: "E-Mail",
     phone: "Telefon",
@@ -273,7 +279,7 @@ export default {
       "Dein E-Mail-Programm öffnet sich. Bitte sende die Nachricht dort selbst ab.",
     sending: "Wird gesendet …",
     success:
-      "Vielen Dank — ich prüfe, ob der gewünschte Zeitraum passt, und melde mich bei dir.",
+      "Vielen Dank — wir prüfen deinen Zeitraum und melden uns mit der Verfügbarkeit und den nächsten Schritten.",
     draftSuccess:
       "Dein Anfrageentwurf wurde heruntergeladen. Er wurde nicht versendet. Sobald eine Kontaktadresse hinterlegt ist, kannst du ihn weiterleiten.",
     emailSuccess:
@@ -425,5 +431,12 @@ export default {
     rightsTitle: "Kontakt und Rechte",
     rights:
       "Der Kontakt für Datenschutzanliegen und die vollständigen Informationen zu Betroffenenrechten werden vor Veröffentlichung ergänzt. Diese Entwurfsseite ist noch keine abschließend geprüfte Datenschutzerklärung.",
+  },
+  design: {
+    eyebrow: "DURCHDACHT EINGERICHTET",
+    title: "Klein, aber\nnicht provisorisch.",
+    text: "Jeder Quadratmeter wird bewusst genutzt. Schlafen, Arbeiten, Kochen und Essen haben ihren eigenen Platz. Stauraum und Einrichtung sind so aufeinander abgestimmt, dass sich hier auch ein längerer Aufenthalt nach Alltag anfühlen kann.",
+    detail:
+      "Warme Holz- und Naturtöne treffen auf dunkles Grün, sanfte Wandfarben, Glas und einzelne unerwartete Details. Ruhig genug zum Arbeiten und Abschalten — persönlich genug, um sich zuhause zu fühlen.",
   },
 };

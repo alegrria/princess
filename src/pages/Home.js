@@ -1,4 +1,5 @@
 import { Header } from "../components/Header.js";
+import { Design } from "../components/Design.js";
 import { Hero } from "../components/Hero.js";
 import { ApartmentFacts } from "../components/ApartmentFacts.js";
 import { Gallery } from "../components/Gallery.js";
@@ -13,5 +14,5 @@ import { InquiryForm } from "../components/InquiryForm.js";
 import { Footer } from "../components/Footer.js";
 import { sectionHeading } from "../components/shared.js";
 export function Home(t) {
-  return `${Header(t)}<main id="main">${Hero(t)}${ApartmentFacts(t)}${Gallery(t)}${Amenities(t)}${Pricing(t)}${Availability(t)}${TenantProfile(t)}${Neighbourhood(t)}<section class="section steps">${sectionHeading(t.steps.eyebrow, t.steps.title)}<div>${t.steps.items.map(([title, text], i) => `<article><span>0${i + 1}</span><h3>${title}</h3><p>${text}</p></article>`).join("")}</div></section>${InquiryForm(t)}${Documents(t)}${FAQ(t)}</main>${Footer(t)}`;
+  return `${Header(t)}<main id="main">${Hero(t)}${ApartmentFacts(t)}${Gallery(t)}${Design(t)}${Amenities(t)}${Pricing(t)}${Availability(t)}${TenantProfile(t)}${Neighbourhood(t)}<section class="section steps">${sectionHeading(t.steps.eyebrow, t.steps.title)}<div>${t.steps.items.map(([title, text], i) => `<article><span>0${i + 1}</span><h3>${title}</h3><p>${text}</p></article>`).join("")}</div></section>${InquiryForm(t)}${Documents(t)}${FAQ(t)}</main>${Footer(t)}`;
 }

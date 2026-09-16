@@ -1,7 +1,8 @@
 import { cp, mkdir, writeFile } from "node:fs/promises";
 import { Home } from "../src/pages/Home.js";
 import { Legal } from "../src/pages/Legal.js";
-import de from "../src/locales/de.js";
+import { getLocale } from "../src/lib/locale.js";
+const de = getLocale("de");
 import { apartment } from "../src/data/apartment.js";
 import { escape } from "../src/lib/html.js";
 await mkdir("dist", { recursive: true });

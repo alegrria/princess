@@ -125,3 +125,22 @@ test("German and English translations have identical keys and placeholders", () 
   }
   walk(de, en);
 });
+
+test("localized copy derives apartment facts from central configuration", async () => {
+  const { getLocale } = await import("../src/lib/locale.js");
+  const changed = {
+    ...apartment,
+    size: 42.5,
+    nickname: "Example",
+    city: "Test City",
+    district: "Test District",
+  };
+  const german = getLocale("de", changed),
+    english = getLocale("en", changed);
+  assert.match(german.description, /42,5/);
+  assert.match(english.description, /42.5/);
+  assert.match(german.description, /Example/);
+  assert.match(english.title, /Test City-Test District/);
+  assert.match(german.overview.detail, /42,5/);
+  assert.doesNotMatch(english.overview.text, /\{nickname\}/);
+});
